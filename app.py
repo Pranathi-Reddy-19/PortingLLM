@@ -8,8 +8,8 @@ import json
 app = Flask(__name__)
 CORS(app)
 
-LLAMA_CLI_PATH = "/var/www/llama.cpp/build/bin/llama-cli"
-MODEL_PATH = "/var/www/llama.cpp/models/orca_mini_3b-Q5_K_S.gguf"
+LLAMA_CLI_PATH = "/opt/render/project/src/llama.cpp/build/bin/llama-cli"
+MODEL_PATH = "/opt/render/project/src/llama.cpp/models/orca_mini_3b-Q5_K_S.gguf"
 
 SYSTEM_PROMPT = (
     "You are an assistant who extracts calendar events from user messages.\n"
